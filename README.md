@@ -1,107 +1,109 @@
-# PinballMachine
+# Pinball Machine
 
-This repository contains a project for the **Mechatronics (ME331)** course at **Bogazici University**, 
-Mechanical Engineering Department. This project contains the design and manufacturing process of a pinball machine including market analysis, mechanical components and CAD files, electrical design schematics and circuit diagrams, and software design.
-This project was completed by a team of six mechanical engineering students:
+This repository contains a project for the **Mechatronics (ME331)** course at **Bogazici University**, Mechanical Engineering Department. This project involves the design and manufacturing of a pinball machine, encompassing market analysis, mechanical components and CAD files, electrical design schematics, circuit diagrams, and software development. The project was completed by a team of six mechanical engineering students:
 
-Tolga Çatak
-
-Ümit Henkoğlu
-
-İbrahim İşsever
-
-Arda Ulutürk
-
-Yasela Mollaoğlu
-
-Ömer Ercan
+- Tolga Çatak  
+- Ümit Henkoğlu  
+- İbrahim İşsever  
+- Arda Ulutürk  
+- Yasela Mollaoğlu  
+- Ömer Ercan  
 
 ---
 
 ## Overview
 
-A pinball machine is chosen as the project so that it is challenging enough in terms of all the aspects such as mechanical, electrical, and software and it can be useful for the students as well, while offering a fun time in cafeterias.
-A summary of the features are provided in the following sections. 
+The pinball machine was chosen as the project for its challenging interdisciplinary requirements in mechanical, electrical, and software design while providing a fun and engaging user experience. The design is modular for easy transportation and installation.  
+The following sections summarize its features.
 
-### Mechanical Design
+---
 
-The pinball machine is built with a size to be large enough for enjoyment and to be modular enough to not cause problems during transportation and installation. The pinball machine constitutes of the following mechanical parts:
+## Repository Structure
 
-2 large, thick mdf (90x50x18 cm) wood panels (Machined with CNC-Router)
-1 large, thin mdf wood panel (90x50x8 cm)
-1 game-begin shooter
-1 in-game shooter
-2 flippers
-2 slingshots
-3 lanes
-1 bumper
-2 bearings
-3 balls
-5 meters RGB led strip
-Miscallenious wood and 3-D printed parts
+The repository is organized as follows:
+
+- **Mechanical Design**: Includes CAD drawings, descriptions of mechanical components, and manufacturing processes.
+- **Electrical Design**: Contains circuit diagrams, electrical schematics, and explanations of the implemented systems.
+- **Software Design**: Features the Arduino code and logic, along with a pseudocode diagram for the pinball machine.
+- **Reports and Documentation**: Provides a detailed report explaining the design, implementation, and final output of the project.
+
+---
+
+## Mechanical Design
+
+The machine is designed with MDF panels, 3D-printed parts, and other components for modularity and durability. Key parts include:
+
+- MDF panels for the main structures and the floor
+- Game-begin shooter and spring
+- In-game shooter
+- Flippers and slingshots
+- Lanes and bumper
+- Ball bearings
+- Miscellaneous wooden and 3D-printed components
 
 An illustration of the pinball machine can be seen below as CAD and in real-life:
 
-![image](https://github.com/user-attachments/assets/577e8d76-cd67-4628-ad7e-1cdbd81277d5)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/577e8d76-cd67-4628-ad7e-1cdbd81277d5" alt="Pinball Machine CAD" width="500">
+</p>
 
-In this illustration, the numbers represent the followings:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ef17b595-be36-4fbc-bd9d-fd3d24e5b656" alt="Pinball Machine Real-Life" width="1000">
+</p>
 
-1. Game-begin shooter and its spring
-2. Lanes controlled with ultrasonic sensors
-3. Spinner corridor where extra points can be scored
-4. Bumper, piezo disc, and solenoid valve
-5. In-game shooter, ultrasonic sensor, and another solenoid valve
-6. Slingshots and the piezo discs
+Detailed information about mechanical components and their manufacturing process can be found in the mechanical design folder.
 
+---
 
-![image](https://github.com/user-attachments/assets/ef17b595-be36-4fbc-bd9d-fd3d24e5b656)
+## Electrical Design
 
+The system is powered by an Arduino MEGA 2560 and includes multiple sensors and actuators:
 
-Detailed information regarding the mechanical parts, their desing and manufacturing processes, their CAD drawings, etc. can be found in the report and the mechanical design folder.
+- Voltage regulator (courtesy of Sinan Öncü - Course Instructor)
+- 12V/5A Adaptor
+- Solenoid actuators
+- Ultrasonic sensors for location detection
+- Piezoelectric sensors for impact detection
+- RGB LED strips
+- LCD Screen
+- Various diodes, transistors, resistors, fuses, mosfets, pushbuttons, etc.
 
-### Electrical Design
+The circuit diagram of the pinball machine can be seen below:
 
-The electrical design is completed using Arduino as the processor and the computer with additional power sources and transformers for different voltage requirements. The pinball machine constitutes of the following electrical components:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8ce5c3f5-ccb8-454e-b334-eaf042f88fbd" alt="Circuit Diagram" width="1500">
+</p>
 
-1 Arduino MEGA 2560
-1 Voltage Regulator (courtesy of Sinan Öncü - Professor at Bogazici University)
-1 12V/5A Adaptor
-2 12V Push-Pull Solenoid 
-2 24V Push-Pull Solenoid
-6 HCSR-04 Ultrasonic Sensor
-1 LCD Screen
-2 Pushbuttons
-4 2A Fuse
-3 IRF3205 MOSFET
-1 IRLZ44 MOSFET
-6 1N5819 Diode 
-3 100Ω Resistor
-4 200Ω Resistor
-1 220Ω Resistor
-5 10,000Ω Resistor
-3 1000Ω Resistor
-3 TIP120 transistors
-3 x 50mm Piezo Disc 
+A real-life, unorganized view of the circuit design and cabling is shown below:
 
-The circuit diagram of pinball machine can be seen below:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b46de2b1-7e81-452d-b606-a2aadebdbe18" alt="Real-Life Circuit Design" width="600">
+</p>
 
-![image](https://github.com/user-attachments/assets/8ce5c3f5-ccb8-454e-b334-eaf042f88fbd)
+Detailed information regarding the electrical components, their circuit diagrams, and installations can be found in the electrical design folder.
 
-A real life picture (not-organized) of the circuit design and the cabling and be seen below:
+---
 
-![IMG-20220105-WA0026](https://github.com/user-attachments/assets/b46de2b1-7e81-452d-b606-a2aadebdbe18)
+## Software Design
 
-Detailed information regarding the electrical components, their circuit diagrams and installations, etc. can be found in the report and the electrical design folder.
+The software for the pinball machine is developed in Arduino IDE. Key features include:
 
-### Software Design
+- Real-time scoring displayed on an LCD screen
+- RGB LED lighting modes for idle and active states
+- Closed-loop control for the in-game shooter
 
-Software design is completed in the Arduino IDE. The pseudo code and the logic behind the code is shown in the diagram below:
+The pseudocode and the logic behind the software design can be found in the [diagram](https://github.com/user-attachments/assets/9e4a0d3d-90eb-4476-99dd-24c661d12e2d); outlining the step-by-step logic of the system, including scoring calculations, sensor integrations, and game state transitions. (The diagram is provided as a link since it is too large to display directly.)
 
-![image](https://github.com/user-attachments/assets/9e4a0d3d-90eb-4476-99dd-24c661d12e2d)
+Source code can be found in the software folder.
 
-Code can be seen in the src folder.
+---
 
 ## Task
 
-In this project with a team of 6 members, the aim was to build something that has mechanical, electrical, and software aspects. As the team, we chose pinball machine as it has all these aspects and can serve a purpose. We based our goal on market analyses as well
-and aimed to install this in the department building upon completion of the project.
+The primary goal of the project was to design and manufacture a pinball machine that integrates mechanical, electrical, and software components in a meaningful way. After conducting a thorough market analysis, we concluded that a pinball machine would not only challenge us in all aspects of the course but also provide utility for our department. The project’s objectives were as follows:
+
+1. Design and manufacture a functional pinball machine with mechanical, electrical, and software components.
+2. Conduct market analysis to understand pricing and user expectations.
+3. Ensure modularity and sustainability in design for easy transportation and low cost.
+4. Implement a scoring system and gameplay logic with Arduino.
+5. Install the pinball machine in the department building for use after completion.
