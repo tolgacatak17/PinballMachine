@@ -16,16 +16,6 @@ This repository contains a project for the **Mechatronics (ME331)** course at **
 The pinball machine was chosen as the project for its challenging interdisciplinary requirements in mechanical, electrical, and software design while providing a fun and engaging user experience. The design is modular for easy transportation and installation.  
 The following sections summarize its features.
 
----
-
-## Repository Structure
-
-The repository is organized as follows:
-
-- **Mechanical Design**: Includes CAD drawings, descriptions of mechanical components, and manufacturing processes.
-- **Electrical Design**: Contains circuit diagrams, electrical schematics, and explanations of the implemented systems.
-- **Software Design**: Features the Arduino code and logic, along with a pseudocode diagram for the pinball machine.
-- **Reports and Documentation**: Provides a detailed report explaining the design, implementation, and final output of the project.
 
 ---
 
@@ -107,3 +97,18 @@ The primary goal of the project was to design and manufacture a pinball machine 
 3. Ensure modularity and sustainability in design for easy transportation and low cost.
 4. Implement a scoring system and gameplay logic with Arduino.
 5. Install the pinball machine in the department building for use after completion.
+
+---
+
+## Repository Structure
+
+The repository is organized as follows:
+
+1. **`code/`**: Contains the Arduino scripts used for controlling the pinball machine's functionality.
+
+2. **`figures/`**: Includes images, CAD illustrations, and visualizations of the pinball machine.
+
+3. **`report/`**: Contains the detailed project report explaining the mechanical, electrical, and software designs, along with the implementation and analysis.
+
+4. **`README.md`**: Provides an overview of the project, its objectives, and instructions for understanding and replicating the design.
+
