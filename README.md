@@ -13,8 +13,7 @@ This repository contains a project for the **Mechatronics (ME331)** course at **
 
 ## Overview
 
-The pinball machine was chosen as the project for its challenging interdisciplinary requirements in mechanical, electrical, and software design while providing a fun and engaging user experience. The design is modular for easy transportation and installation.  
-The following sections summarize its features.
+The pinball machine was chosen as the project for its challenging interdisciplinary requirements in mechanical, electrical, and software design while providing a fun and engaging user experience. The design is modular for easy transportation and installation. The following sections summarize its features.
 
 
 ---
