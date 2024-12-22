@@ -103,11 +103,11 @@ The primary goal of the project was to design and manufacture a pinball machine 
 
 This repository is organized as follows:
 
-1. **`code/`**: Contains the Arduino scripts used for controlling the pinball machine's functionality.
+1. **`figures/`**: Contains images, CAD illustrations, and visualizations of the pinball machine.
 
-2. **`figures/`**: Contains images, CAD illustrations, and visualizations of the pinball machine.
+2. **`report/`**: Contains the detailed project report explaining the mechanical, electrical, and software designs, along with the implementation and analysis.
 
-3. **`report/`**: Contains the detailed project report explaining the mechanical, electrical, and software designs, along with the implementation and analysis.
+3. **`src/`**: Contains the Arduino scripts used for controlling the pinball machine's functionality.
 
 4. **`README.md`**: Provides an overview of the project, its objectives, and instructions for understanding and replicating the design.
 
